@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #ea5b3d,
+    #ea5b3d 20%,
+    #d4dbd9 20%,
+    #d4dbd9
+  );
+  padding-top: 5vh;
+}
+
+main {
+  background: #f8f9fa;
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(350px, 33%) 1fr;
+  max-width: 1200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+section {
+  border: 1px solid #eee;
+}
+
+.user__list {
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  gap: 10px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+.container__profile > img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.user__name {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.container__search {
+  background-color: #f6f6f6;
+  position: sticky;
+  top: 64px;
+  padding: 0.5rem 0.75rem;
+}
+
+.input__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  background-color: white;
+  border-radius: 1000px;
+  width: 100%;
+}
+
+.input__icon {
+  color: #666;
+  font-size: 1em;
+  text-align: center;
+}
+
+.input__container > input {
+  font-family: inherit;
+  border: none;
+  width: 100%;
+  margin-left: 1rem;
+  outline: none;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 0.5rem 0.75rem;
+}
+
+.preview > img {
+  border-radius: 999px;
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview h2 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.preview p {
+  color: #888;
+  max-width: 400px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+ul > li {
+  display: flex;
+  background-color: white !important;
+  border-top: 1px solid #eee;
+  cursor: pointer;
+  z-index: 1;
+}
+
+ul > li:hover {
+  background: #ededed !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.email {
+  color: #666;
+  margin-top: 2px;
+}
+
+.preview span {
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
