@@ -130,6 +130,10 @@ ul > li {
   padding: 0.5rem 0.75rem;
 }
 
+ul li img {
+  margin-right: 15px;
+}
+
 ul > li:hover {
   background: #ededed !important;
 }
