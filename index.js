@@ -40,14 +40,6 @@ const genUserList = (userData) => {
   });
 };
 
-//if coding error, then show error message
-const showErrorMessage = () => {
-  let error = document.createElement("div");
-  error.className = "error";
-  error.appendChild(document.createTextNode("ERROR: SOMETHING WRONG"));
-  profile.appendChild(error);
-};
-
 //create the main function
 const main = async () => {
   let response = await fetchAxios();
@@ -65,7 +57,11 @@ const main = async () => {
       genUserList(newData);
     });
   } else {
-    showErrorMessage();
+    // if it cannot get data from API, then it will create element and show ERROR MESSAGE
+    let error = document.createElement("div");
+    error.className = "error";
+    error.appendChild(document.createTextNode("ERROR: SOMETHING WRONG"));
+    profile.appendChild(error);
   }
 };
 
